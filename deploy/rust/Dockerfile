@@ -42,5 +42,4 @@ COPY assets/licenses ./licenses
 USER handwriting
 ENV HANDWRITING_LISTEN_ADDR=0.0.0.0:5006 HANDWRITING_DATA_DIR=/data
 EXPOSE 5006
-VOLUME ["/data"]
 ENTRYPOINT ["/opt/handwriting/handwriting-server"]
